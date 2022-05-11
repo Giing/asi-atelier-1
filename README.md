@@ -27,23 +27,40 @@ inconvénients des approches Web Statique + Web Service et Dynamique.
 ## Questions
 
 Qu’est-ce que le pattern MVC ? Quels avantages présente-t-il ? 
-> Le pattern MVC est une architecture logicielle qui découpe une application en 3 blocs. Le modèle qui contient les données à afficher.
+> Le pattern MVC est une architecture logicielle qui découpe une application en 3 blocs. Le modèle qui contient les données à afficher. La view qui contient l'interface graphique. Et le controller qui contient les traitement des requetes faîtes par l'utilisateur.
 
-Qu’est-ce que le Web dynamique ?
-pourquoi est-il intéressant ? 
+
+| Avantages |
+|---|
+| - Facilement scalable<br>- Processus de développement plus rapide car il est plus simple de répartir la charge de travail au sein d'une équipe de dev.<br>- Le modèle est découplé de la vue<br>- Facilement maintenable |
+
+
+Qu’est-ce que le Web dynamique ? pourquoi est-il intéressant ? 
+> Le web dynamique consiste à faire créer une page par le serveur grace à un moteur de template et à la renvoyer à l'utilisateur.
 
 Comment sont récupérés les fichiers par le Web Browser en Web
 statique ? 
 
+> En Web statique le web browser fait une requête au serveur qui lui renvoie les fichier tel quel.
+
 Quels sont les avantages d’utiliser du Web Statique avec des services REST ?
+
+> On peut récupérer les données des ressources exposées et mettre à jour la page en conséquences.
 
 
 Qu’est que les architectures N-Tiers ? Quelles avantages apportent-elles ?
 
+> Les architecures N-tier découpent la couche des services métier en plusieurs blocs. Cela offre plusieurs avantages :
+> - Offre une meilleure scalabilité. On peut allouer plus de ressource à un service en particulier. 
+> - La distibution est plus simple.
+> - Les évolutions sont plus facile car on peut cibler un seul service à faire évoluer qui est découplé des autres services.
 
-Comment fonction l’AJAX ?
+
+Comment fonctionne l’AJAX ?
+> L'AJAX est une requête HTTP programmée pour être lancée après une action. Cette requête s'envoie sans rechargement de la page.
 
 Qu’est-ce que JEE ? Comment fonctionne un serveur JEE ? Qu’est-ce qu’un Web Container en JEE ?
+> JEE est un ensemble de norme pour la plateforme Java.
 
 Qu’est ce que Springboot ? quelles différences avec JEE ?
 
