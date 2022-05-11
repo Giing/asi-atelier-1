@@ -17,12 +17,13 @@ inconvénients des approches Web Statique + Web Service et Dynamique.
 
 ## Tableau récapitulatif
 
-|               | Web statique + microservices                                                                                                                                                                                                              | Web dynamique                                                                                                                                              |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Définition    | Une page web statique charge un fichier HTML statique chez le client. Le client va ensuite faire une ou plusieur requêtes aux webservices pour  récupérer les données et construire la page chez le client. Le rendu se fait côté client. | La page est construite côté serveur grâce un moteur de templating.  Elle est renvoyée au client en une seule fois au client avec les données déjà chargée. |
-| Avantages     | Pas besoin de recharger les pages. Affichage dynamique.                                                                                                                                                                                   | Plus rapide. Moins de temps pour charger les pages. Moins coûteux en développement.                                                                        |
-| Inconvénients | Plus lent au démarrage (car pas de mise en cache) car on doit charger l'intégralité du site chez le client.                                                                                                                               | On doit recharger la page pour modifier les données de la vue. Moins adapté aux besoins actuels.                                                           |
-| Technos       | Vue.js, Javascript, Ajax                                                                                                                                                                                                                  | Blade, PHP, Twig, Thymleaf                                                                                                                                 |
+|  | Web statique + microservices | Web dynamique |
+|---|---|---|
+| Définition | Une page web statique charge un fichier HTML statique chez le client. Le client va ensuite faire une ou plusieur requêtes aux webservices pour récupérer les données et construire la page chez le client. Le rendu se fait côté client. | La page est construite côté serveur grâce un moteur de templating.  Elle est renvoyée au client en une seule fois au client avec les données déjà chargée. |
+| Avantages | Très rapide une fois que le site a été chargé côté client. Les microservices permettent une scalabitlité plus optimable. | Moins de temps pour charger les pages. Moins coûteux en développement. |
+| Inconvénients | Plus lent au démarrage (car pas de mise en cache) car on doit charger l'intégralité du site chez le client (SPA). | On doit recharger la page pour modifier les données de la vue. Moins adapté aux besoins actuels. |
+| Sécurité | Moins sécurisé. On expose plus de chose chez le client (on expose du code javascript) | Plus sécurisé. Le code reste sur le serveur. |
+| Technos | Vue.js, Javascript, Ajax | Blade, PHP, Twig, Thymleaf |
 
 ## Questions
 
