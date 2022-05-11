@@ -46,11 +46,14 @@ Comment fonction l’AJAX ?
 Qu’est-ce que JEE ? Comment fonctionne un serveur JEE ? Qu’est-ce qu’un Web Container en JEE ?
 
 Qu’est ce que Springboot ? quelles différences avec JEE ?
+> Spring Boot est un framework de développement JAVA. C'est une déclinaison du framework classique de Spring qui permet essentiellement de réaliser des microservices (ce sont la majeure partie du temps des services web qui sont regroupés en API). Springboot s'affranchit de certaines règles de JEE afin d'avoir un temps d'avance notamment sur les fonctionnalités qu'il propose.
 
 Qu’apport Thymeleaf à Springboot ?
+> Thymeleaf est un template engine (moteur de rendu de document) écrit en Java. Principalement conçu pour produire des vues Web, il fournit un support pour la génération de documents HTML, XHTML, JavaScript et CSS (voire de n’importe quel format texte).
 
-Que signifie l’annotation @Controller, pourquoi est-elle importante lors de la génération de pas coté
-serveur ?
+Que signifie l’annotation @Controller, pourquoi est-elle importante lors de la génération de pas coté serveur ?
+> L'annotation @Controller de Spring est une spécialisation de l'annotation @Component. L'annotation @Controller indique qu'une classe particulière joue le rôle d'un contrôleur. Il est utilisé pour marquer une classe comme un gestionnaire de requête web. Elle est surtout utilisée avec les applications Spring MVC. Cette annotation agit comme un stéréotype pour la classe annotée, indiquant son rôle.
 
 Que représente le répertoire ‘src/main/resources’ dans un projet SpringBoot ? Quelles sont les
 informations stockées à cet endroit ?
+> Le répertoire représente des ressources statiques. Des fichiers de config comme: ```application.properties```, ce fichier est utilisé pour paramétrer le comportement par défaut de l’application. En fonction des dépendances déclarées dans notre projet et en fonction de la valeur des propriétés présentes dans ce fichier, Spring Boot va adapter la création du contexte d’application.
